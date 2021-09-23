@@ -1,0 +1,79 @@
+.form-container{
+  background: $amarillo;
+  border-radius: 1rem;
+
+  form{
+    padding: 3rem;
+    margin-top: 2rem;
+
+    legend{
+      font-family: $fuente_secundaria;
+      font-size: 3rem;
+      text-align: center;
+      width: 100%;
+
+      span{
+        font-size: 1.5rem;
+        clear: both;
+        display: block;
+      }
+    }
+  }
+
+  .fields{
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet{flex-direction: column;}
+
+    .field{
+      flex: 0 0 calc(33.3% - 1rem);
+      
+      label{
+        display: block;
+        font-size: 2rem;
+      }
+
+      input{
+        width: 100%;
+        border: none;
+        border-radius: 1px;
+        outline: none;
+        padding: 1.5rem;
+        border: .2rem solid transparent;
+        margin-bottom: 2rem;
+        transition: all .3s ease;
+
+        &:focus{
+          border: .2rem solid $background_color;
+          -webkit-box-shadow: 0px 0px 2px -1px rgba(0,0,0,0.75);
+          -moz-box-shadow: 0px 0px 2px -1px rgba(0,0,0,0.75);
+          box-shadow: 0px 0px 2px -1px rgba(0,0,0,0.75);
+        }
+      }
+    }
+  }
+  .submit{
+    display: flex;
+    justify-content: flex-end;
+    input{
+      padding: 1.5rem 3.5rem;
+      color: $blanco;
+      background: $background_color;
+      font-size: 2rem;
+      font-weight: $bold;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      text-transform: uppercase;
+      transition: background .2s ease;
+
+      @include tablet{flex: 1;}
+
+      &:hover{
+        background: lighten($background_color, 5);
+        cursor: pointer;
+      }
+    }
+  }
+}

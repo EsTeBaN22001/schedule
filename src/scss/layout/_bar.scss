@@ -1,0 +1,9 @@
+.bar-container{
+  background: darken($background-color, 10);
+  color: $blanco;
+  padding: 2rem;
+  
+  h1{
+    font-weight: 700;
+  }
+}

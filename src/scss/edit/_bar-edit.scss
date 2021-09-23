@@ -1,0 +1,9 @@
+.bar-container{
+  padding: 1rem;
+
+  .bar{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+  }
+}

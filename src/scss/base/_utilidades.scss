@@ -1,0 +1,38 @@
+.container {
+  width: 85%;
+  max-width: 120rem;
+  margin: 3rem auto;
+
+  @include telefono {
+    & {
+      width: 98%;
+    }
+  }
+  @include tablet {
+    & {
+      width: 90%;
+    }
+  }
+}
+
+// .hidden {
+//   display: none;
+// }
+
+.shadow{
+  -webkit-box-shadow: 0px 0px 45px -13px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 0px 45px -13px rgba(0,0,0,0.47);
+  box-shadow: 0px 0px 45px -13px rgba(0,0,0,0.47);
+}
+
+.btn-delete{
+  @include button(transparent, $background-color, inline-block);
+}
+
+.btn-edit{
+  @include button(transparent, $amarillo, inline-block);
+}
+
+.btn-back{
+  @include button($amarillo, $negro, inline-block){border-radius: .5rem;font-size: 2rem};
+}

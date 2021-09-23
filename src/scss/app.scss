@@ -1,0 +1,17 @@
+// Carpeta base
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/all.min';
+
+// Carpeta layout
+@import 'layout/index';
+@import 'layout/bar';
+@import 'layout/form';
+@import 'layout/contact';
+@import 'layout/notifications';
+
+// Carpeta edit
+@import 'edit/bar-edit';

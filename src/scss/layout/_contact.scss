@@ -1,0 +1,62 @@
+.contact{
+  background: $blanco;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  .contacts-container{
+    h2{
+      color: $background-color;
+    }
+
+    .search{
+      width: 100%;
+      padding: 2rem;
+      border: .1rem solid $gris;
+      border-radius: 1rem;
+      margin: 2rem 0;
+      outline: none;
+      font-size: 2rem;
+      transition: all .3s ease;
+
+      &:focus{
+        transform: scale(1.05);
+      }
+    }
+
+    .total-contacts{
+      margin: 2rem 0;
+      text-align: center;
+      color: $background-color;
+      font-size: 3rem;
+      font-weight: $bold;
+
+      span{
+        font-weight: 900;
+        font-size: 4rem;
+      }
+    }
+
+    .list-contacts{
+      width: 100%;
+      margin-top: 1rem;
+      border-collapse: collapse;
+      text-align: center;
+
+      thead{
+        background: $background-color;
+
+        th{
+          padding: 1rem 0;
+          color: $blanco;
+          text-transform: uppercase;
+        }
+      }
+
+      tbody{
+        td{
+          padding: .5rem;
+        }
+      }
+    }
+  }
+}
